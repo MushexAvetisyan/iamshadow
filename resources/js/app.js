@@ -1,4 +1,4 @@
-import './bootstrap';
+import './bootstrap.js';
 
 const addEventOnElements = (elements, eventType, callback) => {
     for (let i = 0, len = elements.length; i < len; i++) {
