@@ -1,0 +1,26 @@
+<?php
+
+namespace App\Listeners;
+
+use Illuminate\Auth\Events\Logout;
+
+class UpdateUserStatusOnLogout
+{
+    /**
+     * Create the event listener.
+     */
+    public function __construct()
+    {
+        //
+    }
+
+    /**
+     * Handle the event.
+     */
+    public function handle(Logout $event): void
+    {
+        $user = $event->user;
+        $user->is_active = false;
+        $user->save();
+    }
+}

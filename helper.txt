@@ -1,0 +1,26 @@
+php artisan send:active-user-mail -> Send Emails To All Active Users
+
+php artisan optimize:clear
+
+php artisan route:clear
+
+php artisan cache:clear
+
+php artisan migrate:fresh --seed -> Seed All Database
+
+npm run watch -> Watch All Files
+
+npm run prod -> Production All Files
+
+php artisan storage:clear -> Clear All Storage
+
+php artisan vendor:publish -> Publish Vendor Files
+
+
+
+STRIPE_SECRET_KEY=sk_test_51NrnJwKWesTJxa9GCarnGB2kgtgLEdG4aXluFXFiOReawVfrSwUjfbbW0Zx6WcvITPiQhTdX98iq5wIlggSUBEAl00HgVjTWBm
+STRIPE_WEBHOOK_SECRET=whsec_e2f4d29937648d0300d4ba84a1712c56a9430599ac3acd2d1406d0f5be87297f
+
+GITHUB_ID=340883eeb443feaecac7
+GITHUB_SECRET=19cd9a3e458c0e49b33a1bd1038c8f88248caa0a
+GITHUB_URL=http://127.0.0.1:8000/github/callback
